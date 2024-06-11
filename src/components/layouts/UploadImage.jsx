@@ -1,6 +1,6 @@
 const UploadImage = ({ fixHeight }) => {
   return (
-    <div className = {`min-h-[160px] min-w-[160px] bg-gray-100 border border-dashed border-gray-400 rounded-lg ${ fixHeight ? "sm:min-w-[160px] sm:min-h-[160px]" : "sm:min-w-[0px] sm:min-h-[0px]"} `}>
+    <div className = {`min-h-[160px] min-w-[130px] bg-gray-100 border border-dashed border-gray-400 rounded-lg ${ fixHeight ? "sm:min-w-[160px] sm:min-h-[160px]" : "sm:min-w-[0px] sm:min-h-[0px]"} `}>
       <label
         htmlFor="drop-file"
         className="flex flex-col items-center justify-center w-full h-full font-semibold capitalize cursor-pointer gap-y-4 "

@@ -2,7 +2,7 @@
 
 A responsive image gallery using React JS with the following features: reordering, deleting multiple images, and setting a feature image.
 
-Live Demo: 
+Live Demo: [https://responsive-image-gallery-task.netlify.app](https://responsive-image-gallery-task.netlify.app)
 
 <p align="center"><img src="https://i.imgur.com/XcnJcyl.png" alt="project-image"></p>
 
