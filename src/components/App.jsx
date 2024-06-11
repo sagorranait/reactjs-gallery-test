@@ -26,6 +26,7 @@ const App = () => {
   const [selectedImages, setSelectedImages] = useState([]);
   const [selectAllImages, setSelectAllImages] = useState(false);
 
+  // Handle the image selection and deselecting
   const selectImageHandler = (index) => {
     let selected = [...selectedImages];
     let unSelect = selected.indexOf(index);
@@ -37,12 +38,14 @@ const App = () => {
     setSelectedImages(selected);
   };
 
+  // Delete selected images by clicking on the delete button
   const ImageDeleteHandler = () => {
     const updateImages = images.filter((value) => !selectedImages.includes(value));
     setImages(updateImages);
     setSelectedImages([]);
   };
 
+  // Select all images by clicking on header check input
   const selectAllImagesHandler = () => {
     if (selectAllImages) {
       setSelectAllImages(false);
@@ -53,11 +56,13 @@ const App = () => {
     }
   };
 
+  // Using mouse and touch sensor for drag and drop functionality
   const sensors = useSensors(
     useSensor(MouseSensor),
     useSensor(TouchSensor, { activationConstraint: { delay: 250, tolerance: 5 } })
   );
   
+  // Handle the drag end event
   const DragEndHandler = (event) => {
     const { active, over } = event;
 
@@ -70,7 +75,9 @@ const App = () => {
     setImageId(null);
   }
 
+  // Handle the drag start event
   const DragStartHandler = (event) => setImageId(event.active.id);
+  // Handle the drag cancel event
   const DragCancelHandle = () => setImageId(null);
 
   return (

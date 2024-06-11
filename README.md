@@ -2,6 +2,8 @@
 
 A responsive image gallery using React JS with the following features: reordering, deleting multiple images, and setting a feature image.
 
+Live Demo: 
+
 <p align="center"><img src="https://i.imgur.com/XcnJcyl.png" alt="project-image"></p>
 
 ## Features
@@ -9,4 +11,4 @@ A responsive image gallery using React JS with the following features: reorderin
  - <b>Sorting:</b> The gallery images have a reordering functionality that allows users to rearrange the order of pictures in the gallery. For reordering images, The user can drag and drop.
  - <b>Deleting Multiple Images:</b> Users can select and delete multiple images.
  - <b>Setting Feature Image:</b> Users can set a feature image by sorting. The featured image is visually distinct from the other images.
- - <b>User Experience:</b> Image-Gallery is mobile-friendly and compatible with various devices, including smartphones and tablets.
+ - <b>User Experience:</b> This project is mobile-friendly and compatible with various devices, including smartphones and tablets.
