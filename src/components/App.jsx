@@ -18,6 +18,7 @@ import data from '../data/index';
 import DragImage from './DragImage';
 import SortableImage from './SortableImage';
 import UploadImage from './layouts/UploadImage';
+import Header from './Header';
 
 const App = () => {
   const [images, setImages] = useState(data);
@@ -37,18 +38,18 @@ const App = () => {
   };
 
   const ImageDeleteHandler = () => {
-    const updateImages = items.filter((value) => !selectedImages.includes(value));
+    const updateImages = images.filter((value) => !selectedImages.includes(value));
     setImages(updateImages);
     setSelectedImages([]);
   };
 
   const selectAllImagesHandler = () => {
-    if (allSelect) {
+    if (selectAllImages) {
       setSelectAllImages(false);
       setSelectedImages([]);
     } else {
       setSelectAllImages(true);
-      setSelectedImages(items);
+      setSelectedImages(images);
     }
   };
 
@@ -76,12 +77,12 @@ const App = () => {
     <div className="grid min-h-[100dvh] bg-sky-100 items-center py-8">
       <div className="container">
         <div className="w-full max-w-5xl m-auto pb-10 bg-white rounded-lg shadow">
-          {/* Hearder Start */}
-          <div className="flex items-center px-3 py-6 mb-3 capitalize border-b sm:px-10 ">
-            <h2 className="flex items-center w-1/2 text-lg font-semibold sm:text-xl">Gallery</h2>          
-            <span className="w-1/2 font-medium text-red-600 cursor-pointer text-end hover:underline">delete files</span>
-          </div>
-          {/* Hearder End */}
+          <Header 
+            length={selectedImages.length}
+            ImageDeleteHandler={ImageDeleteHandler}
+            selectAllImagesHandler={selectAllImagesHandler}
+          />
+          {/* Image Gallery Start */}
           <DndContext 
             sensors={sensors} 
             collisionDetection={closestCenter} 
@@ -109,7 +110,9 @@ const App = () => {
               { imageId ? <DragImage src={imageId} index={images.indexOf(imageId)} overlay={true} /> : null }
             </DragOverlay>
           </DndContext>
+          {/* Image Gallery End */}
         </div>
+        <p className='text-center pt-5 text-sm text-gray-600'>©2024 Sagor Rana. React JS Developer Test</p>
       </div>
     </div>
   );

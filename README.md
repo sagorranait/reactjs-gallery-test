@@ -1,8 +1,12 @@
-# React + Vite
+## Image Gallery Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive image gallery using React JS with the following features: reordering, deleting multiple images, and setting a feature image.
 
-Currently, two official plugins are available:
+<p align="center"><img src="https://i.imgur.com/XcnJcyl.png" alt="project-image"></p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+ - <b>Gallery Layout:</b> I have used the grid layout for the image gallery. There is a feature image larger than the others' image.
+ - <b>Sorting:</b> The gallery images have a reordering functionality that allows users to rearrange the order of pictures in the gallery. For reordering images, The user can drag and drop.
+ - <b>Deleting Multiple Images:</b> Users can select and delete multiple images.
+ - <b>Setting Feature Image:</b> Users can set a feature image by sorting. The featured image is visually distinct from the other images.
+ - <b>User Experience:</b> Image-Gallery is mobile-friendly and compatible with various devices, including smartphones and tablets.
