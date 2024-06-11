@@ -16,7 +16,7 @@ const Overlay = (props) => {
         checked={selected}
         id={`id${index}`}
         className={`
-          sm:w-6 sm:h-6 w-5 h-5 text-blue-600 translate-x-4 translate-y-4 border-none rounded cursor-pointer outline-transparent
+          sm:w-6 sm:h-6 w-5 h-5 text-blue-600 translate-x-4 translate-y-4 border-none rounded cursor-grab outline-transparent
           ${ overlay ? "invisible" : "visible" } 
         `}
       />

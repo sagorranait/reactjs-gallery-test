@@ -40,7 +40,7 @@ const DragImage = forwardRef((
           transformOrigin: "0 0",
           ...style,
         }}
-        className="relative overflow-hidden border-4 rounded-lg cursor-move group first:col-span-2 first:row-span-2 first:w-full first:h-full"
+        className="relative overflow-hidden border border-gray-400 rounded-lg cursor-move group first:col-span-2 first:row-span-2 first:w-full first:h-full"
       >
         <Image 
           src={src} 

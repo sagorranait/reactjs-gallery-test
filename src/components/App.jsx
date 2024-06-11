@@ -78,7 +78,7 @@ const App = () => {
         <div className="w-full max-w-5xl m-auto pb-10 bg-white rounded-lg shadow">
           {/* Hearder Start */}
           <div className="flex items-center px-3 py-6 mb-3 capitalize border-b sm:px-10 ">
-            <h2 className="flex items-center w-1/2 text-lg font-semibold sm:text-xl">Responsive Image Gallery</h2>          
+            <h2 className="flex items-center w-1/2 text-lg font-semibold sm:text-xl">Gallery</h2>          
             <span className="w-1/2 font-medium text-red-600 cursor-pointer text-end hover:underline">delete files</span>
           </div>
           {/* Hearder End */}
